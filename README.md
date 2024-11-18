@@ -26,6 +26,7 @@ Step 1: Install the Scrapy Rotating Proxies Package
 Begin by installing the scrapy-rotating-proxies package, which automates the management of multiple proxies.
 
 pip install scrapy-rotating-proxies
+
 Step 2: Configure Proxy Middleware in Scrapy
 
 Activate the proxy middleware in Scrapy’s settings file (settings.py) to handle proxy rotation.
@@ -35,6 +36,7 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy_rotating_proxies.middlewares.RotatingProxyMiddleware': 610,
     'scrapy_rotating_proxies.middlewares.BanDetectionMiddleware': 620,
 }
+
 Step 3: Define Your Proxy List
 
 Add your list of proxies for Scrapy to rotate through. High-quality paid proxies, such as [rotating residential proxies](https://www.macroproxy.com/rotating-residential-proxy), are recommended for better reliability and anonymity.
@@ -45,6 +47,7 @@ ROTATING_PROXY_LIST = [
     'http://proxy3.com:8000',  # No authentication required
     # Add more proxies as needed
 ]
+
 Step 4: Adjust Proxy Rotation Settings
 
 Fine-tune the proxy rotation settings in Scrapy to control retries and rotation frequency.
